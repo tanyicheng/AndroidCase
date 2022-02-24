@@ -9,6 +9,33 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.AndroidCase">
+        <!--
+        launchMode 模式
+            standard（默认模式）这种模式下Activity可以有多个实例，每次启动Activity不管堆栈中是否有Activity这个实例，系统都会创建一个实例。
+          ✅singleTop 和 standard 模式非常相似，主要区别就是当一个Activity已经位于栈顶，再去启动它时，不会再创建新的实例，如果不位于栈顶，就会创建新的实例。
+          ✅singleTask：这种模式下Activity在同一个Task内只有一个实例，如果Activity位于栈顶，系统不会创建新的实例，和SingleTop模式一样，但Activity已经存在或者Activity不位于栈顶时，会把activity移到栈顶。
+            singleInstance模式也是单例，但与SingleTask不同，SingleTask只是任任务栈内单例。使用singleInstance 的Activity在整个系统中只有一个实例。
+                启动一个模式为singleInstance的Activity时，系统会创建一个新的任务栈，并且这个任务栈只有它一个Activity。
+                singleInstance模式并不常用，如果我们把一个Activity设置为singleInstance模式，你会发现它启动时会慢一些，切换效果不好，影响用户体验
+        -->
+        <activity
+            android:name=".layout.test"
+            android:exported="false"
+            android:launchMode="singleTop">
+            <intent-filter>
+                <action android:name="com.snipe.androidcase.layout.test" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".layout.FrameLayoutActivity"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.snipe.androidcase.layout.FrameLayoutActivity" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
         <activity
             android:name=".MainActivity"
             android:exported="true">
