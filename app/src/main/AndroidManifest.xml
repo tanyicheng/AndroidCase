@@ -19,11 +19,11 @@
                 singleInstance模式并不常用，如果我们把一个Activity设置为singleInstance模式，你会发现它启动时会慢一些，切换效果不好，影响用户体验
         -->
         <activity
-            android:name=".layout.test"
+            android:name=".layout.LinearLayoutActivity"
             android:exported="false"
             android:launchMode="singleTop">
             <intent-filter>
-                <action android:name="com.snipe.androidcase.layout.test" />
+                <action android:name="com.snipe.androidcase.layout.LinearLayoutActivity" />
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </activity>

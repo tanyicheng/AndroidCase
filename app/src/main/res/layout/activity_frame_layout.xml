@@ -32,7 +32,7 @@
 
     <!--
     textAllCaps:false 文本正常显示，默认都是大写
-    STEP.click.2.1
+    STEP.FrameLayoutActivity.click.2
     -->
     <Button
         android:id="@+id/btnClick"
@@ -45,7 +45,7 @@
         android:translationY="80dp" />
 
     <!--
-    STEP.text.1.1
+    STEP.FrameLayoutActivity.1
     -->
     <EditText
         android:id="@+id/etContent"
@@ -56,8 +56,8 @@
         android:translationY="130dp" />
 
     <!--
-    STEP.click.1.1
-    STEP.click.3.1
+    STEP.FrameLayoutActivity.click.1
+    STEP.FrameLayoutActivity.click.3
     -->
     <Button
         android:id="@+id/btnGetContent"

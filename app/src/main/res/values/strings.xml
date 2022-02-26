@@ -1,4 +1,4 @@
 <resources>
     <string name="app_name">AndroidCase</string>
-    <string name="update_btn_name">修改按钮名称</string>
+    <string name="update_btn_name">点击按钮看看</string>
 </resources>

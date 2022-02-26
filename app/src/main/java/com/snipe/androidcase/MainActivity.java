@@ -6,9 +6,11 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
+import android.widget.LinearLayout;
 
 import com.snipe.androidcase.constants.ParamsConstant;
 import com.snipe.androidcase.layout.FrameLayoutActivity;
+import com.snipe.androidcase.layout.LinearLayoutActivity;
 
 public class MainActivity extends AppCompatActivity {
     private static final String TAG = "MainActivity";
@@ -34,5 +36,11 @@ public class MainActivity extends AppCompatActivity {
         intent.putExtra(ParamsConstant.intentData.getName(),"这是传递的值");
         startActivity(intent);
 
+    }
+
+    public void goLinearLayout(View view) {
+        //显示跳转到 activity
+        Intent intent = new Intent(this, LinearLayoutActivity.class);
+        startActivity(intent);
     }
 }
