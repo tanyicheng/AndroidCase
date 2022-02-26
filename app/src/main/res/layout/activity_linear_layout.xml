@@ -7,6 +7,7 @@
     tools:context=".layout.LinearLayoutActivity">
 
     <!--
+    STEP.activity.jump.1
     线性布局
     orientation="vertical" 垂直布局，LinearLayout默认是水平布局 RelativeLayout
     layout_weight：在 LinearLayout 下，类似前段对栅格，按比例划分，如下"战斗机占比"就是3/（3+1+4）

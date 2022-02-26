@@ -14,6 +14,12 @@ import com.snipe.androidcase.R;
  */
 public class LinearLayoutActivity extends AppCompatActivity {
 
+    /**
+     * STEP.activity.jump.1
+     * @Author created by snipe in 2022/2/26 22:10
+     * @Param
+     * @return
+     */
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
