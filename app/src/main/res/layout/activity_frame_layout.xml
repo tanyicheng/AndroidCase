@@ -1,9 +1,72 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".layout.FrameLayoutActivity">
+    <!--
+    帧布局可以说是最简单的ViewGroup。
+    当我们往里面添加控件的时候，会默认把控件放在左上角，如果放多个会有叠加效果，这种布局没有任何的定位方式。
+    参考文档：https://developer.android.google.cn/reference/android/widget/FrameLayout?hl=ch
+    -->
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <!--
+    match_parent 充满整个屏幕
+    wrap_content 自适应内容大小
+    dp 固定大小
+    @color 引用xml配置文件中的值
+    drawableStart 增加一个资源在文本的 Start|end|top|bottom
+    maxLines 最多可以显示几行文本
+    android:ellipsize=”start” 省略号显示在开头 "...pedia"
+    includeFontPadding 缩小空间边距
+    -->
+
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hello World!"
+        android:textColor="@color/purple_200"
+        app:drawableStartCompat="@mipmap/ic_launcher" />
+
+    <!--
+    textAllCaps:false 文本正常显示，默认都是大写
+    STEP.click.2.1
+    -->
+    <Button
+        android:id="@+id/btnClick"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/update_btn_name"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:translationX="0dp"
+        android:translationY="80dp" />
+
+    <!--
+    STEP.text.1.1
+    -->
+    <EditText
+        android:id="@+id/etContent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="请输入"
+        android:textColorHint="@color/grey"
+        android:translationY="130dp" />
+
+    <!--
+    STEP.click.1.1
+    STEP.click.3.1
+    -->
+    <Button
+        android:id="@+id/btnGetContent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="获取文本框内容"
+        android:textAllCaps="false"
+        android:translationX="0dp"
+        android:translationY="165dp" />
+
+
+</FrameLayout>
