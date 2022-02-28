@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".layout.RelativeLayoutActivity">
+
+<!--
+布局：
+    android：layout_centerHrizontal 水平居中
+    android：layout_centerVertical 垂直居中
+    android：layout_centerInparent 相对于父控件完全居中
+    android：layout_alignParentBottom 贴紧父控件的下边缘
+    android：layout_alignParentLeft 贴紧父控件的左边缘
+    android：layout_alignParentRight 贴紧父控件的右边缘
+    android：layout_alignParentTop 贴紧父控件的上边缘
+    android：layout_marginBottom 离某控件底边缘的距离
+    android：layout_marginLeft 离某控件左边缘的距离
+    android：layout_marginRight 离某控件右边缘的距离
+    android：layout_marginTop 离某控件上边缘的距离
+    android：layout_below 在某控件下方
+    android：layout_above 在某控件上方
+    android：layout_toLeftOf 在某控件的左边
+    android：layout_toRightOf 在某控件的右边
+    android：layout_alignTop 本控件的上边缘和某控件的上边缘对齐
+    android：layout_alignLeft 本控件的左边缘和某控件的左边缘对齐
+    android：layout_alignBottom 本控件的下边缘和某控件的下控件对齐
+    android：layout_alignRight 本控件的右边缘和某控件的有边缘对齐
+-->
+
+    <Button
+        android:id="@+id/btnJump"
+        android:onClick="clickJump"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="页面跳转"/>
+
+    <ProgressBar
+        android:id="@+id/pb"
+        style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:max="100"
+        android:progress="60"
+        android:progressDrawable="@drawable/progress_bar_test" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/pb"
+        android:text="布加迪威龙" />
+
+</RelativeLayout>

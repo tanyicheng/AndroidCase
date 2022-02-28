@@ -6,11 +6,12 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
-import android.widget.LinearLayout;
 
+import com.snipe.androidcase.InterfaceStyle.TextViewActivity;
 import com.snipe.androidcase.constants.ParamsConstant;
 import com.snipe.androidcase.layout.FrameLayoutActivity;
 import com.snipe.androidcase.layout.LinearLayoutActivity;
+import com.snipe.androidcase.layout.RelativeLayoutActivity;
 
 public class MainActivity extends AppCompatActivity {
     private static final String TAG = "MainActivity";
@@ -28,7 +29,7 @@ public class MainActivity extends AppCompatActivity {
      * @Param
      * @return
      */
-    public void touchMe(View view) {
+    public void goFrameLayout(View view) {
         Log.d(TAG,"点击事件：touchMe");
         //显示跳转到 activity
         Intent intent = new Intent(this, FrameLayoutActivity.class);
@@ -39,8 +40,18 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void goLinearLayout(View view) {
-        //显示跳转到 activity
         Intent intent = new Intent(this, LinearLayoutActivity.class);
         startActivity(intent);
+    }
+
+    public void goRelativeLayout(View view) {
+        Intent intent = new Intent(this, RelativeLayoutActivity.class);
+        startActivity(intent);
+    }
+
+    public void goTextView(View view) {
+        Intent intent = new Intent(this, TextViewActivity.class);
+        startActivity(intent);
+
     }
 }

@@ -3,10 +3,13 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="app/src/main/res/drawable/progress_bar_test.xml" value="0.222" />
         <entry key="app/src/main/res/layout/activity_frame_layout.xml" value="0.25" />
         <entry key="app/src/main/res/layout/activity_linear_layout.xml" value="0.16145833333333334" />
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.2667572463768116" />
+        <entry key="app/src/main/res/layout/activity_relative_layout.xml" value="0.16145833333333334" />
         <entry key="app/src/main/res/layout/activity_test.xml" value="0.31875" />
+        <entry key="app/src/main/res/layout/activity_text_view.xml" value="0.45" />
       </map>
     </option>
   </component>

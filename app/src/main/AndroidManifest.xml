@@ -9,6 +9,32 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.AndroidCase">
+        <activity
+            android:name=".InterfaceStyle.TextViewActivity"
+            android:exported="false" />
+        <activity
+            android:name=".layout.RelativeLayoutActivity"
+            android:exported="false" />
+
+        <!-- STEP.activity.jump.1 activity的跳转 -->
+        <activity
+            android:name=".layout.LinearLayoutActivity"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.snipe.androidcase.layout.LinearLayoutActivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".layout.FrameLayoutActivity"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.snipe.androidcase.layout.FrameLayoutActivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
         <!--
         launchMode 模式
             standard（默认模式）这种模式下Activity可以有多个实例，每次启动Activity不管堆栈中是否有Activity这个实例，系统都会创建一个实例。
@@ -18,28 +44,10 @@
                 启动一个模式为singleInstance的Activity时，系统会创建一个新的任务栈，并且这个任务栈只有它一个Activity。
                 singleInstance模式并不常用，如果我们把一个Activity设置为singleInstance模式，你会发现它启动时会慢一些，切换效果不好，影响用户体验
         -->
-        <!--STEP.activity.jump.1 activity的跳转-->
-        <activity
-            android:name=".layout.LinearLayoutActivity"
-            android:exported="false"
-            android:launchMode="singleTop">
-            <intent-filter>
-                <action android:name="com.snipe.androidcase.layout.LinearLayoutActivity" />
-                <category android:name="android.intent.category.DEFAULT" />
-            </intent-filter>
-        </activity>
-        <activity
-            android:name=".layout.FrameLayoutActivity"
-            android:exported="false">
-            <intent-filter>
-                <action android:name="com.snipe.androidcase.layout.FrameLayoutActivity" />
-                <category android:name="android.intent.category.DEFAULT" />
-            </intent-filter>
-        </activity>
-
         <activity
             android:name=".MainActivity"
-            android:exported="true">
+            android:exported="true"
+            android:launchMode="singleTop">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
